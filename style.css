@@ -1,0 +1,428 @@
+/* W3.CSS 2.75 by Jan Egil and Borge Refsnes */
+*{
+	-webkit-box-sizing:border-box; /* Chrome, Safari, Opera */
+	-moz-box-sizing:border-box; /* Firefox */
+    box-sizing:border-box;
+    
+    
+}
+/*styles for body*/
+body{
+    background-image: linear-gradient(#7982CD, #FFC5B5);
+    background-size: cover;
+    
+    color: #000000;
+    font-family: Verdana, Arial, sans-serif;
+    
+}
+/*forces older browsers to render html5 correctly*/
+header, main, nav, footer, figure, figcaption, aside, section, article{
+	display: block;
+}
+
+/*styles for header*/
+header{
+    background-color: #EDBCB8;
+    padding: 10px;
+    
+     
+}
+
+/*Styles for navigation*/
+/* Add a black background color to the top navigation */
+.topnav {
+    position: relative;
+    background-color: #EDBCB8;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: rgb(96, 72, 141);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #908EC9;
+    color: white;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: rgb(96, 72, 141);
+    color: white;
+  }
+  
+  /* Centered section inside the top navigation */
+  .topnav-centered a {
+    float: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
+    float: right;
+  }
+/*styles for main*/
+main{
+    padding-top: 0%;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    display: block;
+    border-style: solid;
+    /*margin-left: 175px;*/
+}
+
+/*unorder list marker*/
+main ul{
+    /*list-style: url(images/marker.gif);*/
+    list-style-position: inside;
+}
+
+main div{
+    align-self: center;
+    font-size: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+/*heading styles*/
+h1 {
+    text-align: center;
+    height: auto;
+    margin:0;
+    background-image: url(images/javalogo.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+     
+    
+}
+h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    text-align: center;
+}
+h3{
+    border-style: solid;
+    text-transform: uppercase;
+}
+/*styles for section*/
+section{
+    margin-left: 20%;
+    margin-right: 20%;
+    overflow: auto;
+    font-size:90%;
+}
+/*description list*/
+dt{
+    font-weight: bold;
+}
+
+/*table*/
+table{
+    margin:auto;
+    width:80%;
+}
+td, th{
+    padding: 10px;
+}
+
+tr:nth-of-type(odd){
+    background-color: #d2b48c
+}
+
+/*styles for footer*/
+footer{
+    border-style: solid;
+    color: #000000;
+    font-size: 0.60em;
+    font-style: italic;
+    text-align: center;
+    padding:10px;
+}
+
+footer a:link{
+    color:rgb(87, 90, 136);
+}
+footer a:visited{
+    color:#000000;  
+}
+footer a:hover{
+    color:#f5f5dc;
+}
+/* id styles */
+#wrapper{
+    background-image: linear-gradient(#7982CD, #FFC5B5);
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    border-style: solid;
+    min-width: 960px;
+    max-width: 2048px;
+    box-shadow: 3px 3px 3px #000000;
+}
+#hero{
+    height:auto;
+    /*color*/
+    
+    /*background-image: url(images/heroroad.jpg);*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+ 
+    position: relative;
+    align-self: center;
+    width:100%;
+    max-width:600px;
+}
+/*responsiveness*/
+
+/******************grid*******************/
+
+/* style */
+
+/*make different color combinations for columns*/
+.red{color:#ffffff; background-color:#f44336;}
+.green{color:#000000; border-style: solid;}
+.purple{
+    color:#000000;
+    display: inline-block;
+    max-width: 400px;
+    padding: 10px;
+    word-break: break-all;
+}
+.indigo{color:#000000;}
+.blue-grey{color:#ffffff; background-color:#607d8b;}
+.blue{color:#ffffff; background-color:#2196F3;}
+.pink{color:#ffffff; background-color:#ffffff00;}
+.yellow{
+    color:#000000; 
+    border-style: solid;
+    display: inline-block;
+    word-break: break-all;
+}
+
+/*so text is not on the edge*/
+.container{
+    padding:1%;
+
+    
+}
+
+.full{
+    position:relative;
+    max-width:100%;
+    max-height:100%;
+ 
+}
+.half{width:49.99999%;}
+.third{width:33.33333%;}
+.twothird{width:66.66666%;}
+.quarter{width:24.99999%;}
+.threequarter{width:74.99999%;}
+
+/*no stack*/
+
+
+.right{float:right;}
+.half, .third, .twothird, .quarter, .threequarter, .pic, .thirdWithMargins{float:left; }
+
+
+.smallWidth{width: 90px;}/*to have a set width */
+.rest{overflow:hidden;}/*keeps the bottom of rest even with small*/
+
+/*Margins */
+.marginRight{ margin-right: 1%;}
+.marginBoth{	
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.marginLeft{margin-left: 1%;}
+.thirdWithMargins{width:49%; }
+.thirdWithMargins{float:left; }
+
+/*picture padding*/
+.row-padding,.row-padding>.pic{padding:0 8px;}
+.pic{width:33.33333%;}
+
+
+
+/*newspaper stuff*/
+.newspaper {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+.newspaper2 {
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+	 -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+	/*this adds more space around lines*/
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+   
+}
+.container:after,.row:after, .row-padding:after{content:"";display:table;clear:both;}
+
+img{ 
+    position: relative;
+    width: 100%;
+    height: auto;
+    }/*so images respond to size of parent div*/
+    
+@media (max-width:600px){
+	.half{width:100%;}
+	.quarter{width:100%;}
+	.third{width:100%;}
+	.twothird{width:100%;}
+	.threequarter{width:100%;}
+	.col.s4{width:100%;}
+	.thirdWithMargins{width: 100%;margin: 0;}
+	.pic{width:100%;}
+	.newspaper,.newspaper2 {
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+		-moz-column-count: 1; /* Firefox */
+		column-count: 1;
+	}
+}
+    /* for slideshow*/
+    .slideshow { 
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        max-width:100%;
+        max-height:100%;
+        
+        }
+        .slideshow img { 
+        padding: 5px; 
+        display: inline-block;
+        align-self: center;
+        justify-content: center;
+        }
+
+/*tablet size*******************************************************************/
+@media only screen and (max-width: 64em){
+    body{
+        background-image: linear-gradient(#7982CD, #FFC5B5);
+        background-image: none;
+        margin:0;
+    }
+    #wrapper{
+        width:auto;
+        min-width: 0;
+        box-shadow: none;
+    }
+    h1{
+        /*background-image: url(images/javalogomobile.gif);*/
+        margin: 0;
+    }
+    main{
+        margin: 0;
+    }
+    nav{
+        position: relative;
+        float: none;
+        width: auto;
+        padding: 0;
+    }
+    nav ul{
+        text-align: center;
+    }
+    nav li{
+        display: inline;
+        padding: 0 0.75em 0 0.75em;
+    }
+}
+/*smartphone*/
+@media only screen and (max-width: 37.5em){
+    .topnav a, .topnav-right {
+        float: none;
+        display: block;
+      }
+    
+      .topnav-centered a {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+      }
+    main a:link{
+        color:#ffffff;
+    }
+    main a:visited{
+        color: #eaeaea;
+    }
+    main a:hover{
+        color: #ffd700;
+    }
+    section{
+        margin: 0;
+    }
+    section img{
+        display:none;
+    }
+    #hero{
+        height:auto;
+    }
+    #mobile{
+        display:inline;
+    }
+    #desktop{
+        display:none;
+    }
+    
+label{
+    float:none;
+    text-align:left;
+    width:200px;	}
+
+    
+input[type=”submit”]{
+    margin-left:0;
+}
+
+}
+
+
+nav a { 	
+	text-decoration: none;
+	transition: color .5s ease-out;
+	
+}
+
+main img{
+	position: relative;
+	transition: 0.70s;
+	-webkit-transition: 0.70s;
+	-moz-transition: 0.70s;
+	-ms-transition: 0.70s;
+	-o-transition: 0.70s;
+}
+
+  
+  audio { 
+    clear: both;
+          padding-top: 20px;
+    }
+
+
