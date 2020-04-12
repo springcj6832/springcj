@@ -8,13 +8,25 @@
 }
 /*styles for body*/
 body{
-    background-image: linear-gradient(#7982CD, #FFC5B5);
+    background-color: #2D3142;
     background-size: cover;
     
     color: #000000;
     font-family: Verdana, Arial, sans-serif;
     
 }
+
+/*style for centered images*/
+
+.image-container {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    /* Material design properties */
+    }
+  
 /*forces older browsers to render html5 correctly*/
 header, main, nav, footer, figure, figcaption, aside, section, article{
 	display: block;
@@ -22,24 +34,23 @@ header, main, nav, footer, figure, figcaption, aside, section, article{
 
 /*styles for header*/
 header{
-    background-color: #EDBCB8;
+    background-color: #FFFFFF;
     padding: 10px;
     
      
 }
 
 /*Styles for navigation*/
-/* Add a black background color to the top navigation */
 .topnav {
     position: relative;
-    background-color: #EDBCB8;
+    background-color: #FFFFFF;
     overflow: hidden;
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
-    color: rgb(96, 72, 141);
+    color: #2D3142;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -48,13 +59,13 @@ header{
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #908EC9;
+    background-color: #EF8354;
     color: white;
   }
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: rgb(96, 72, 141);
+    background-color: #EF8354;
     color: white;
   }
   
@@ -90,6 +101,9 @@ main ul{
     list-style-position: inside;
 }
 
+
+
+
 main div{
     align-self: center;
     font-size: 90%;
@@ -103,14 +117,14 @@ h1 {
     text-align: center;
     height: auto;
     margin:0;
-    background-image: url(images/javalogo.gif);
+    font-family: sans-serif;
     background-position: center;
     background-repeat: no-repeat;
      
     
 }
 h2 {
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: sans-serif;
     text-align: center;
 }
 h3{
@@ -153,24 +167,30 @@ footer{
 }
 
 footer a:link{
-    color:rgb(87, 90, 136);
+    color:rgb(0, 0, 0);
 }
 footer a:visited{
-    color:#000000;  
+    color:rgb(255, 77, 0);  
 }
 footer a:hover{
-    color:#f5f5dc;
+    color:#EF8354;
 }
 /* id styles */
+
+#rcorners1 {
+    background-color: #2D3142;
+    opacity: .5;
+    border-radius: 25px;
+  }
+
 #wrapper{
-    background-image: linear-gradient(#7982CD, #FFC5B5);
+    background-image: linear-gradient(#FFFFFF, #BFC0C0);
     width: 80%;
     margin-left:auto;
     margin-right:auto;
     border-style: solid;
     min-width: 960px;
     max-width: 2048px;
-    box-shadow: 3px 3px 3px #000000;
 }
 #hero{
     height:auto;
@@ -185,10 +205,10 @@ img{
     max-width: 100%;
     height: auto;
  
-    position: relative;
+    position: center;
     align-self: center;
     width:100%;
-    max-width:600px;
+    
 }
 /*responsiveness*/
 
@@ -196,7 +216,7 @@ img{
 
 /* style */
 
-/*make different color combinations for columns*/
+/*organization of styles*/
 .red{color:#ffffff; background-color:#f44336;}
 .green{color:#000000; border-style: solid;}
 .purple{
@@ -323,7 +343,8 @@ img{
 /*tablet size*******************************************************************/
 @media only screen and (max-width: 64em){
     body{
-        background-image: linear-gradient(#7982CD, #FFC5B5);
+        background-color: #2D3142;
+        background-image: linear-gradient(#FFFFFF, #BFC0C0);
         background-image: none;
         margin:0;
     }
