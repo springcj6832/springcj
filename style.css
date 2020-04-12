@@ -177,7 +177,7 @@ footer a:hover{
 }
 /* id styles */
 
-#rcorners1 {
+#backgroundtext {
     background-color: #2D3142;
     opacity: .5;
     border-radius: 25px;
@@ -218,7 +218,11 @@ img{
 
 /*organization of styles*/
 .red{color:#ffffff; background-color:#f44336;}
-.green{color:#000000; border-style: solid;}
+.green{color:#ffffff; 
+    padding:10px;
+    border-radius: 25px;
+    background-color: rgb(239, 130, 84);
+}
 .purple{
     color:#000000;
     display: inline-block;
@@ -226,7 +230,9 @@ img{
     padding: 10px;
     word-break: break-all;
 }
-.indigo{color:#000000;}
+.indigo{color:#000000;
+    background-color: rgba(45, 49, 66, 0.089);
+}
 .blue-grey{color:#ffffff; background-color:#607d8b;}
 .blue{color:#ffffff; background-color:#2196F3;}
 .pink{color:#ffffff; background-color:#ffffff00;}
