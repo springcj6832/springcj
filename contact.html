@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
 if(isset($_POST['submit'])){
     $to = "email@example.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
     // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
 ?>
-
+ -->
 
 <!DOCTYPE html>
 <html>
@@ -55,7 +55,7 @@ if(isset($_POST['submit'])){
         }
 
         input[type=submit] {
-        background-color: #4CAF50;
+        background-color: rgb(239, 130, 84);
         color: white;
         padding: 12px 20px;
         border: none;
@@ -64,11 +64,11 @@ if(isset($_POST['submit'])){
         }
 
         input[type=submit]:hover {
-        background-color: #45a049;
+        background-color: rgb(239, 130, 84);
         }
 
         .container {
-        border-radius: 5px;
+        border-radius: 25px;
         background-color: #f2f2f2;
         padding: 20px;
         }
@@ -169,12 +169,19 @@ if(isset($_POST['submit'])){
                                 <input type="submit" name="submit" value="Submit">
                             </form>
                       </div>
+                      <br>
+                      <div class="row green full">
+                        <!-- Add font awesome icons -->
 
-                    
+                        <br>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <br/><br/>
+                    </div>
             </div>
-            <br/>
-        
-            <br/>
+
         </main>
         <footer> <!--Copyright & contact-->
             Copyright &copy; 2020 Cj Springett 
