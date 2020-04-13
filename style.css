@@ -101,6 +101,25 @@ main ul{
     list-style-position: inside;
 }
 
+p.a{
+    background-color: rgba(45, 49, 66, 0.24);
+    padding: 10px;
+    border-radius: 25px;
+    word-break: normal;
+    font-family: sans-serif;
+    font-size: medium;
+}
+
+img.basic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 25px;
+}
+
 
 
 
