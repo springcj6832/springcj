@@ -21,29 +21,38 @@ if(isset($_POST['submit'])){
 
 <!DOCTYPE html>
 <html>
-	<head>
-        <title>Springett | Contact</title> <!--Keywords-->
-        <link rel="icon" href="" type="image/x-icon">
-        <link rel= "stylesheet" href="style.css">
-		<meta name="keywords" content="">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    
-    <style>
-        p.a{
-            word-break: normal;
-            font-family: sans-serif;
-            font-size: medium;
-        }
-        
-        body {font-family: Arial, Helvetica, sans-serif;}
-        * {box-sizing: border-box;}
+<head>
+    <title>Springett | Contact</title>
+    <!--Keywords-->
+    <link rel="icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-        input[type=text], select, textarea {
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+    p.a {
+        word-break: normal;
+        font-family: sans-serif;
+        font-size: medium;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    input[type=text],
+    select,
+    textarea {
         width: 100%;
         padding: 12px;
         border: 1px solid #ccc;
@@ -52,112 +61,115 @@ if(isset($_POST['submit'])){
         margin-top: 6px;
         margin-bottom: 16px;
         resize: vertical;
-        }
+    }
 
-        input[type=submit] {
+    input[type=submit] {
         background-color: rgb(239, 130, 84);
         color: white;
         padding: 12px 20px;
         border: none;
         border-radius: 4px;
         cursor: pointer;
-        }
+    }
 
-        input[type=submit]:hover {
+    input[type=submit]:hover {
         background-color: rgb(239, 130, 84);
-        }
+    }
 
-        .container {
+    .container {
         border-radius: 25px;
         background-color: #f2f2f2;
         padding: 20px;
-        }
+    }
 
-        p.a{
-            word-break: normal;
-            font-family: sans-serif;
-            font-size: medium;
-        }
+    p.a {
+        word-break: normal;
+        font-family: sans-serif;
+        font-size: medium;
+    }
 
-        .fa {
-            display: inline-flex;
-            margin-left: auto;
-            margin-right: auto;
-            justify-content: center;
-            width: 24%;
-            padding: 20px;
-            font-size: 30px;
-            text-align: center;
-            text-decoration: none;
-        }
-    
-            .fa:hover {
-                opacity: 0.7;
-            }
-            
-            
-            .fa-twitter {
-            background: #55ACEE;
-            color: white;
-            }
-            
-            
-            .fa-linkedin {
-            background: #007bb5;
-            color: white;
-            }
-            
-            .fa-youtube {
-            background: #bb0000;
-            color: white;
-            }
-            
-            .fa-instagram {
-            background: #125688;
-            color: white;
-            }   
+    .fa {
+        display: inline-flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        width: 24%;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        text-decoration: none;
+    }
 
-    </style>
+    .fa:hover {
+        opacity: 0.7;
+    }
 
 
-	<body>
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
 
 
-        
-        <div id="wrapper"><!--wrapper-->
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+</style>
+
+
+<body>
+
+
+
+    <div id="wrapper">
+        <!--wrapper-->
         <header>
             <h1>GrowBox Unlimited</h1>
         </header>
-                    <nav> <!--Navigation Bar-->
-                        <!-- Top navigation -->
+        <nav>
+            <!--Navigation Bar-->
+            <!-- Top navigation -->
             <div class="topnav">
 
                 <!-- Centered link -->
-            <div class="topnav-centered">
-                <a href="contact.html" class="active">Contact</a>
-            </div>
+                <div class="topnav-centered">
+                    <a href="contact.html" class="active">Contact</a>
+                </div>
 
                 <!-- Left-aligned links (default) -->
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
 
                 <!-- Right-aligned links -->
-            <div class="topnav-right">
-                <a href="newsletter.html">Newsletter</a>
-                <a href="about.html">About</a>
-            </div>
+                <div class="topnav-right">
+                    <a href="newsletter.html">Newsletter</a>
+                    <a href="about.html">About</a>
+                </div>
         </nav>
         <main id="hero">
             <h2></h2>
 
-            <div> <!--Location-->
+            <div>
+                <!--Location-->
                 <div class="row">
                     <h2>
-                        For support and buisness inquiries, please use the form below, otherwise contact us on social media!
+                        For support and buisness inquiries, please use the form below, otherwise contact us on social
+                        media!
                     </h2>
 
                     <div class="container">
-                       
+
 
                         <form action="form_submitted.html" method="post">
 
@@ -168,9 +180,9 @@ if(isset($_POST['submit'])){
                                 Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
                                 <input type="submit" name="submit" value="Submit">
                             </form>
-                      </div>
-                      <br>
-                      <div class="row green full">
+                    </div>
+                    <br>
+                    <div class="row green full">
                         <!-- Add font awesome icons -->
 
                         <br>
@@ -178,15 +190,18 @@ if(isset($_POST['submit'])){
                         <a href="#" class="fa fa-linkedin"></a>
                         <a href="#" class="fa fa-youtube"></a>
                         <a href="#" class="fa fa-instagram"></a>
-                        <br/><br/>
+                        <br /><br />
                     </div>
-            </div>
+                </div>
 
         </main>
-        <footer> <!--Copyright & contact-->
-            Copyright &copy; 2020 Cj Springett 
+        <footer>
+            <!--Copyright & contact-->
+            Copyright &copy; 2020 Cj Springett
             <a href="mailto:springcj6832@uwec.edu">springcj6832@uwec.edu</a>
         </footer>
-        </div><!--wrapper-->
-	</body>
+    </div>
+    <!--wrapper-->
+</body>
+
 </html>
